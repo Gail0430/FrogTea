@@ -17,6 +17,43 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+     /* ── 點綴色：暖橘 / 焦糖（CTA / 價格 / 特殊強調） ── */
+  --accent-orange:      #E8791A;   /* 主暖橘（CTA按鈕、熱銷標籤） */
+  --accent-orange-dark: #C45E08;   /* 深焦糖（價格文字、深度強調） */
+  --accent-orange-light:#F5A95E;   /* 淺橘（徽章、輔助） */
+  --accent-caramel:     #D4830A;   /* 焦糖色（黑糖系列強調） */
+
+  /* ── 輔助中性色 ── */
+  --neutral-white:      #FFFFFF;
+  --neutral-card:       #FAFDF7;   /* 卡片底色（帶極淡綠意的白） */
+  --neutral-border:     #D6E8DA;   /* 邊框（青綠色系邊框） */
+
+  /* ── 文字色 ── */
+  --text-primary:       #1C3828;   /* 主文字（深墨綠） */
+  --text-secondary:     #3D6B50;   /* 次要文字（中青綠） */
+  --text-muted:         #7A9E85;   /* 輔助文字（淡青綠灰） */
+  --text-on-dark:       #F0FAF2;   /* 深底色上的文字 */
+  --text-on-dark-sub:   rgba(240,250,242,0.75);
+
+  /* ── 陰影 ── */
+  --shadow-sm:          rgba(47, 92, 62, 0.10);
+  --shadow-md:          rgba(47, 92, 62, 0.16);
+  --shadow-lg:          rgba(47, 92, 62, 0.22);
+
+  /* ── 波浪分隔 ── */
+  --wave-color:         #E4F0E8;
+}
+
+/* =====================================================
+   二、Reset & 基礎
+   ===================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -423,3 +460,4 @@ footer {
         gap: 20px;
     }
 }
+
