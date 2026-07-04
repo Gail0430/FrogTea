@@ -1,125 +1,393 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>青蛙來了 FROG COMING | 蛙系好茶 線上點餐</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'noto': ['"Noto Sans TC"', 'sans-serif'],
-                    },
-                    colors: {
-                        'brand-cream': '#FDFBF7',
-                        'brand-brown': '#3E2723',
-                        'brand-orange': '#C86A46',
-                        'brand-orange-dark': '#A65536',
-                        'brand-green': '#A4B465',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body { font-family: 'Noto Sans TC', sans-serif; background-color: #FDFBF7; }
-        .hero-bg {
-            background: linear-gradient(135deg, #FDFBF7 0%, #F5EFE6 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        .cta-btn-orange {
-            background: linear-gradient(135deg, #C86A46 0%, #A65536 100%);
-            transition: all 0.3s ease;
-        }
-        .cta-btn-orange:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(200, 106, 70, 0.4);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta -->
+  <title>青蛙來了 FROG COMING｜台中大里 · 一中 · 新北永和 手搖飲料專賣店</title>
+  <meta name="description" content="青蛙來了 FROG COMING，現點現做的特色手搖飲料。招牌紅心粉圓 Q 彈有嚼勁，高山原鄉愛玉清涼消暑。台中大里店、一中店、新北永和店，解鎖茶飲新風味！" />
+  <meta name="keywords" content="青蛙來了,FROG COMING,手搖飲料,台中飲料,大里飲料,一中街飲料,永和飲料,粉圓奶茶,愛玉,黑糖粉圓,桑椹愛玉,布丁鮮奶,紅心粉圓,高山愛玉,特色茶飲,台灣手搖飲,現點現做" />
+  <meta name="author" content="青蛙來了 FROG COMING" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://gail0430.github.io/FrogTea/index.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="青蛙來了 FROG COMING｜解鎖茶飲新風味 特色不踩雷！" />
+  <meta property="og:description" content="軟Q有嚼勁的紅心粉圓、高山原鄉愛玉，為您帶來舌尖上的享受。現點現做，新鮮喝得到。台中大里、一中、新北永和三店。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gail0430.github.io/FrogTea/index.html" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:image" content="images/store-wall-logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="青蛙來了 FROG COMING｜解鎖茶飲新風味 特色不踩雷！" />
+  <meta name="twitter:description" content="軟Q有嚼勁的紅心粉圓、高山原鄉愛玉，為您帶來舌尖上的享受。現點現做，新鮮喝得到。" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "青蛙來了 FROG COMING",
+    "description": "現點現做的特色手搖飲料，招牌紅心粉圓、高山愛玉",
+    "url": "https://gail0430.github.io/FrogTea/",
+    "servesCuisine": "手搖飲料",
+    "location": [
+      {
+        "@type": "Place",
+        "name": "大里店",
+        "address": { "@type": "PostalAddress", "addressLocality": "台中市大里區", "streetAddress": "大里路39-4號" },
+        "telephone": "04-24837788"
+      },
+      {
+        "@type": "Place",
+        "name": "一中店",
+        "address": { "@type": "PostalAddress", "addressLocality": "台中市北區", "streetAddress": "一中街96號1F-02" },
+        "telephone": "04-22293131"
+      },
+      {
+        "@type": "Place",
+        "name": "永和店",
+        "address": { "@type": "PostalAddress", "addressLocality": "新北市永和區", "streetAddress": "中和路613號" },
+        "telephone": "02-89211507"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="text-brand-brown">
 
-    <header class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center gap-2">
-                    <i class="fas fa-frog text-brand-green text-2xl"></i>
-                    <span class="font-bold text-xl tracking-wide">FROG COMING 青蛙來了</span>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#menu" class="hover:text-brand-orange transition-colors font-medium">人氣飲品</a>
-                    <a href="#order" class="hover:text-brand-orange transition-colors font-medium">線上預訂</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+<body>
 
-    <section class="hero-bg py-16 md:py-24">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-brand-green font-bold tracking-widest mb-2">茶有奇香，果有真味</p>
-            <h1 class="text-4xl md:text-6xl font-black mb-6">解鎖茶飲新風味<br>特色不踩雷！</h1>
-            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-80">軟Q有嚼勁的紅心粉圓、高山原鄉愛玉，為您帶來舌尖上的享受。現點現做，新鮮喝得到。</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#menu" class="cta-btn-orange text-white font-bold py-3 px-8 rounded-full shadow-lg">
-                    查看最新菜單
-                </a>
-                <a href="#order" class="bg-white border-2 border-brand-green text-brand-green font-bold py-3 px-8 rounded-full hover:bg-brand-green hover:text-white transition-all">
-                    <i class="fab fa-line mr-2"></i>LINE 線上點餐
-                </a>
-            </div>
+  <!-- ========== HEADER ========== -->
+  <header>
+    <nav class="navbar container" aria-label="主導覽列">
+      <a href="index.html" class="navbar-brand" aria-label="青蛙來了首頁">
+        <span class="brand-name">🐸 青蛙來了</span>
+      </a>
+      <ul class="navbar-nav" role="list">
+        <li><a href="index.html" class="nav-link active">首頁</a></li>
+        <li><a href="Menu.html" class="nav-link">菜單</a></li>
+        <li><a href="#popular" class="nav-link">人氣商品</a></li>
+        <li><a href="#branches-footer" class="nav-link">分店資訊</a></li>
+        <li><a href="Menu.html" class="btn-primary" style="padding:8px 22px;font-size:0.9rem;">查看菜單</a></li>
+      </ul>
+      <button class="navbar-menu-btn" id="menuToggle" aria-label="開啟選單" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <nav class="mobile-nav" id="mobileNav" aria-label="行動版導覽">
+      <a href="index.html" class="nav-link active">首頁</a>
+      <a href="Menu.html" class="nav-link">菜單</a>
+      <a href="#popular" class="nav-link">人氣商品</a>
+      <a href="#branches-footer" class="nav-link">分店資訊</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO BANNER ========== -->
+    <section class="hero" aria-labelledby="hero-title" id="hero-section">
+      <div class="hero-leaf hero-leaf-1"></div>
+      <div class="hero-leaf hero-leaf-2"></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">茶有奇香，果有真味</span>
+        <h1 class="hero-title" id="hero-title">
+          解鎖茶飲新風味<br>特色不踩雷！
+        </h1>
+        <p class="hero-subtitle">
+          軟Q有嚼勁的紅心粉圓、高山原鄉愛玉，為您帶來舌尖上的享受。<br>
+          現點現做，新鮮喝得到。
+        </p>
+        <div class="hero-actions">
+          <a href="Menu.html" class="btn-primary">查看菜單</a>
+          <a href="#popular" class="btn-outline">探索人氣商品</a>
         </div>
+      </div>
     </section>
 
-    <section id="menu" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 relative inline-block left-1/2 -translate-x-1/2">
-                主打推薦
-                <div class="absolute -bottom-3 left-0 w-full h-1 bg-brand-orange rounded-full"></div>
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 text-center hover:shadow-md transition">
-                    <div class="w-20 h-20 bg-orange-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-circle text-brand-orange text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">紅心粉圓系列</h3>
-                    <p class="text-sm opacity-70 mb-4">軟Q有嚼勁，無咖啡因。推薦：黑糖呱呱粉圓、芋泥圓圓鮮奶。</p>
-                    <span class="text-brand-orange font-bold">NT$ 40 起</span>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 text-center hover:shadow-md transition">
-                    <div class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-leaf text-brand-green text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">原鄉愛玉系列</h3>
-                    <p class="text-sm opacity-70 mb-4">高山原鄉愛玉，清涼解渴。推薦：桑葚愛玉、檸檬愛玉粉圓。</p>
-                    <span class="text-brand-orange font-bold">NT$ 45 起</span>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 text-center hover:shadow-md transition">
-                    <div class="w-20 h-20 bg-yellow-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-mug-hot text-yellow-600 text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">醇奶香濃系列</h3>
-                    <p class="text-sm opacity-70 mb-4">濃郁豈能錯過。推薦：蜜香鮮奶茶、杉火烏龍奶。</p>
-                    <span class="text-brand-orange font-bold">NT$ 55 起</span>
-                </div>
-            </div>
+    <!-- ========== FEATURES STRIP ========== -->
+    <section class="features-strip" aria-label="品牌特色">
+      <div class="container">
+        <div class="feature-item">
+          <span class="icon" aria-hidden="true">🌿</span>
+          <span>天然原料嚴選</span>
         </div>
+        <div class="feature-item">
+          <span class="icon" aria-hidden="true">⏱️</span>
+          <span>現點現做新鮮製</span>
+        </div>
+        <div class="feature-item">
+          <span class="icon" aria-hidden="true">🏔️</span>
+          <span>高山原鄉愛玉</span>
+        </div>
+        <div class="feature-item">
+          <span class="icon" aria-hidden="true">🫧</span>
+          <span>紅心粉圓 Q 彈</span>
+        </div>
+        <div class="feature-item">
+          <span class="icon" aria-hidden="true">🏪</span>
+          <span>三店同步供應</span>
+        </div>
+      </div>
     </section>
 
-    <section id="order" class="py-16 bg-brand-brown text-brand-cream text-center">
-        <div class="container mx-auto px-4 max-w-3xl">
-            <h2 class="text-3xl font-bold mb-6">永和店 專屬快速訂購</h2>
-            <p class="mb-8 opacity-80">新北市永和區中和路613號 | 02-89211507 <br>大量訂購請填寫下方表單或加入LINE官方帳號由專人為您服務。</p>
-            <div class="bg-white p-2 rounded-xl inline-block mb-4">
-                <div class="w-32 h-32 bg-gray-200 flex items-center justify-center text-gray-500">LINE QR Code</div>
+    <!-- ========== POPULAR PRODUCTS ========== -->
+    <section class="popular-products" id="popular" aria-labelledby="popular-title">
+      <div class="container">
+        <h2 class="section-title fade-up" id="popular-title">人氣商品</h2>
+        <div class="products-grid">
+
+          <!-- 粉圓布丁鮮奶 -->
+          <article class="product-card fade-up" aria-label="粉圓布丁鮮奶">
+            <div class="product-card-img-wrap">
+              <span class="product-badge">招牌必點</span>
+              <img
+                src="images/product-pudding-milk.png"
+                alt="粉圓布丁鮮奶 - 嫩滑布丁搭配Q彈紅心粉圓與新鮮牛奶"
+                class="product-card-img"
+                loading="lazy"
+              />
             </div>
-            <p class="text-sm mt-4">（本網站透過 GitHub Pages 加速並整合 Google Forms 接單系統）</p>
+            <div class="product-card-body">
+              <h3 class="product-name">粉圓布丁鮮奶</h3>
+              <p class="product-desc">嫩滑布丁與 Q 彈紅心粉圓完美相遇，搭配醇厚鮮奶，口感豐富層次鮮明，一口喝下幸福滿滿。</p>
+              <div class="product-tags">
+                <span class="product-tag">🍮 嫩滑布丁</span>
+                <span class="product-tag">鮮奶</span>
+                <span class="product-tag">口感豐富</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 黑糖呱呱粉圓 -->
+          <article class="product-card fade-up" aria-label="黑糖呱呱粉圓">
+            <div class="product-card-img-wrap">
+              <span class="product-badge" style="background:var(--brand-brown-dark);">人氣首選</span>
+              <img
+                src="images/product-brown-sugar-pearl.png"
+                alt="黑糖呱呱粉圓 - 手炒黑糖搭配Q彈紅心粉圓"
+                class="product-card-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">黑糖呱呱粉圓</h3>
+              <p class="product-desc">手炒黑糖搭配招牌紅心粉圓，QQ 有嚼勁的口感層層疊加，濃郁黑糖香氣令人回味無窮。</p>
+              <div class="product-tags">
+                <span class="product-tag">🖤 手炒黑糖</span>
+                <span class="product-tag">紅心粉圓</span>
+                <span class="product-tag">軟Q彈牙</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 桑椹愛玉 -->
+          <article class="product-card fade-up" aria-label="桑椹愛玉">
+            <div class="product-card-img-wrap">
+              <span class="product-badge" style="background:var(--brand-wine);">季節推薦</span>
+              <img
+                src="images/product-mulberry-jelly.png"
+                alt="桑椹愛玉 - 清涼酸甜的特色飲品"
+                class="product-card-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">桑椹愛玉</h3>
+              <p class="product-desc">精選桑椹果香與高山原鄉愛玉完美融合，酸甜清涼，每一口都是水果的原味享受。</p>
+              <div class="product-tags">
+                <span class="product-tag">🫐 桑椹果香</span>
+                <span class="product-tag">高山愛玉</span>
+                <span class="product-tag">清涼消暑</span>
+              </div>
+            </div>
+          </article>
+
         </div>
+
+        <div style="text-align:center;margin-top:40px;">
+          <a href="Menu.html" class="btn-outline fade-up">查看完整菜單 →</a>
+        </div>
+      </div>
     </section>
+
+    <!-- ========== BRAND STORY ========== -->
+    <section class="brand-story" aria-labelledby="story-title">
+      <div class="container">
+        <div class="brand-story-inner">
+          <div class="brand-story-text">
+            <h2 class="section-title fade-up" id="story-title">關於青蛙來了</h2>
+            <p class="fade-up">青蛙來了致力於為每位顧客帶來最新鮮、最獨特的茶飲體驗。我們嚴選高山原鄉愛玉，親自手洗製作，保留最天然的膠質與清香。</p>
+            <p class="fade-up">招牌紅心粉圓每日新鮮熬煮，軟Q有嚼勁，口感層次豐富。無論您喜歡清爽果茶還是濃郁奶茶，都能在青蛙來了找到心目中的完美選擇。</p>
+            <p class="fade-up">現點現做是我們的堅持，新鮮看得見，美味喝得到。</p>
+          </div>
+          <div class="brand-story-visual fade-up" aria-label="品牌數據">
+            <div class="story-card">
+              <div class="story-icon" aria-hidden="true">🏪</div>
+              <div class="story-num">3</div>
+              <div class="story-label">直營門市</div>
+            </div>
+            <div class="story-card">
+              <div class="story-icon" aria-hidden="true">☕</div>
+              <div class="story-num">30+</div>
+              <div class="story-label">飲品品項</div>
+            </div>
+            <div class="story-card">
+              <div class="story-icon" aria-hidden="true">🌿</div>
+              <div class="story-num">100%</div>
+              <div class="story-label">天然食材</div>
+            </div>
+            <div class="story-card">
+              <div class="story-icon" aria-hidden="true">⏱️</div>
+              <div class="story-num">現做</div>
+              <div class="story-label">現點現製</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="branches-footer" aria-labelledby="footer-branches-title">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-text">🐸 青蛙來了</div>
+          <p>FROG COMING</p>
+          <p style="margin-top:10px;">茶有奇香，果有真味。<br>現點現做，新鮮喝得到。</p>
+          <p style="margin-top:14px;">
+            <a href="Menu.html" style="color:var(--brand-brown-light);font-weight:600;text-decoration:underline;font-size:0.9rem;">查看完整菜單 →</a>
+          </p>
+        </div>
+
+        <div class="footer-branches" aria-labelledby="footer-branches-title">
+          <h2 id="footer-branches-title" class="section-title" style="display:none">分店資訊</h2>
+
+          <!-- 大里店 -->
+          <address class="branch-card" aria-label="台中大里店資訊">
+            <div class="branch-name">大里店</div>
+            <div class="branch-info">
+              <span class="info-icon" aria-hidden="true">📍</span>
+              <span>台中市大里區大里路39-4號<br><small>（店門口設於益民路上）</small></span>
+            </div>
+            <div class="branch-info">
+              <span class="info-icon" aria-hidden="true">📞</span>
+              <a href="tel:04-24837788" style="color:inherit;">04-24837788</a>
+            </div>
+            <div class="branch-qr-area" aria-label="大里店 LINE QR Code 預留區">
+              <i class="fab fa-line" style="font-size:2rem;color:#00C300;"></i>
+              <span class="qr-label">LINE QR Code</span>
+            </div>
+          </address>
+
+          <!-- 一中店 -->
+          <address class="branch-card" aria-label="台中一中店資訊">
+            <div class="branch-name">一中店</div>
+            <div class="branch-info">
+              <span class="info-icon" aria-hidden="true">📍</span>
+              <span>台中市北區一中街96號1F-02<br><small>（IPLAZA愛廣場一樓）</small></span>
+            </div>
+            <div class="branch-info">
+              <span class="info-icon" aria-hidden="true">📞</span>
+              <a href="tel:04-22293131" style="color:inherit;">04-22293131</a>
+            </div>
+            <div class="branch-qr-area" aria-label="一中店 LINE QR Code 預留區">
+              <i class="fab fa-line" style="font-size:2rem;color:#00C300;"></i>
+              <span class="qr-label">LINE QR Code</span>
+            </div>
+          </address>
+
+          <!-- 永和店 -->
+          <address class="branch-card" aria-label="新北永和店資訊">
+            <div class="branch-name">永和店</div>
+            <div class="branch-info">
+              <span class="info-icon" aria-hidden="true">📍</span>
+              <span>新北市永和區中和路613號</span>
+            </div>
+            <div class="branch-info">
+              <span class="info-icon" aria-hidden="true">📞</span>
+              <a href="tel:02-89211507" style="color:inherit;">02-89211507</a>
+            </div>
+            <div class="branch-qr-area" aria-label="永和店 LINE QR Code 預留區">
+              <i class="fab fa-line" style="font-size:2rem;color:#00C300;"></i>
+              <span class="qr-label">LINE QR Code</span>
+            </div>
+          </address>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 青蛙來了 FROG COMING. All rights reserved.</p>
+        <p class="footer-note">大量訂購請填寫訂購表單或加入 LINE 官方帳號由專人為您服務。</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    // Mobile nav toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close mobile nav when clicking a link
+    mobileNav.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Scroll animations
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    fadeEls.forEach(el => observer.observe(el));
+
+    // Smooth anchor scroll with offset for sticky header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
