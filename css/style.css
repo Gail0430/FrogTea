@@ -375,6 +375,109 @@ header {
   color: var(--white);
 }
 
+/* Menu page extra styles */
+    .menu-nav-tabs {
+      position: sticky;
+      top: 70px;
+      z-index: 900;
+      background: rgba(255,249,238,0.97);
+      border-bottom: 2px solid rgba(47,82,51,0.15);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .menu-tabs-inner {
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .menu-tabs-inner::-webkit-scrollbar { display: none; }
+
+    .menu-tab-btn {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      padding: 14px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-mid);
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: all 0.25s ease;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .menu-tab-btn:hover {
+      color: var(--brand-green-dark);
+      background: rgba(47,82,51,0.06);
+    }
+
+    .menu-tab-btn.active {
+      color: var(--brand-green-dark);
+      border-bottom-color: var(--brand-brown);
+    }
+
+    .menu-section-wrap {
+      padding: 64px 0;
+    }
+
+    .menu-section-wrap:nth-child(even) {
+      background: var(--brand-cream);
+    }
+
+    .menu-note-bar {
+      background: rgba(47,82,51,0.1);
+      border-left: 4px solid var(--brand-brown);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 12px 18px;
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .size-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(47,82,51,0.12);
+      color: var(--brand-green-dark);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 50px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    .badge-no-caffeine {
+      background: rgba(5,247,21,0.14);
+      color: var(--brand-green-dark);
+    }
+
+    .badge-hot {
+      background: rgba(138,74,28,0.14);
+      color: var(--brand-brown-dark);
+    }
+
+    .ice-sugar-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .ice-sugar-tag {
+      background: var(--brand-cream);
+      border: 1px solid rgba(47,82,51,0.2);
+      color: var(--text-mid);
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 50px;
+    }
+
 /* ---------- Features Strip ---------- */
 .features-strip {
   background: var(--brand-green-dark);
@@ -743,19 +846,18 @@ footer {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
 
 .menu-item-card {
   background: var(--white);
   border-radius: var(--radius-md);
-  padding: 20px 18px;
+  padding: 16px;
   border: 1px solid rgba(48,124,57,0.14);
   box-shadow: var(--shadow-sm);
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
   gap: 12px;
   transition: all var(--transition);
 }
@@ -784,6 +886,66 @@ footer {
   font-weight: 800;
   color: var(--brand-green);
   white-space: nowrap;
+}
+
+/* ---------- Menu Item Photo Placeholder ---------- */
+.item-photo-placeholder {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(160deg, var(--brand-cream) 0%, var(--brand-bg) 100%);
+  border: 1.5px dashed rgba(48,124,57,0.35);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--text-light);
+  flex-shrink: 0;
+}
+
+.item-photo-placeholder i {
+  font-size: 1.6rem;
+  color: rgba(48,124,57,0.45);
+}
+
+.item-photo-placeholder span {
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Promo Banner ---------- */
+.menu-promo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: linear-gradient(90deg, var(--brand-green) 0%, var(--brand-green-dark) 100%);
+  color: var(--white);
+  padding: 18px 24px;
+  border-radius: var(--radius-md);
+  margin: 0 auto 8px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(5,247,21,0.4);
+  flex-wrap: wrap;
+}
+
+.menu-promo-banner .promo-icon {
+  font-size: 1.6rem;
+}
+
+.menu-promo-banner .promo-text {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 10px rgba(5,247,21,0.4);
+}
+
+.menu-promo-banner .promo-sub {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.8);
+  width: 100%;
 }
 
 /* ---------- Scroll Animation ---------- */
